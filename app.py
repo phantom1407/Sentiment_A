@@ -5,7 +5,7 @@ from PIL import Image
 from googletrans import Translator
 
 st.title('Análisis de Sentimiento')
-image = Image.open('feelings.jpg')
+image = Image.open('feelings.png')
 st.image(image)
 st.subheader("Cuéntame como te sientes")
 
