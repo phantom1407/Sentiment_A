@@ -7,7 +7,7 @@ from googletrans import Translator
 st.title('Análisis de Sentimiento')
 image = Image.open('feelings.jpg')
 st.image(image)
-st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
+st.subheader("Cuéntame como te sientes")
 
 translator = Translator()
 
@@ -24,7 +24,7 @@ with st.sidebar:
                ) 
 
 with st.expander('Analizar texto'):
-    text = st.text_input('Escribe por favor: ')
+    text = st.text_input('Escribe acá: ')
     if text:
 
         translation = translator.translate(text, src="es", dest="en")
